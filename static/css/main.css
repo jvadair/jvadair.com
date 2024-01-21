@@ -1,0 +1,121 @@
+/*noinspection CssUnknownTarget*/
+@import url('/fonts');
+
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+
+/* Global variables */
+:root {
+    --background-color: #46494C;
+    --accent-blue: #A0CED9;
+    --accent-green: #ADF7B6;
+    --accent-yellow: #FFEE93;
+    --accent-red: #FFC09F;
+    --text: white;
+}
+
+html {
+	background-color: var(--background-color);
+	color: var(--text);
+    scroll-behavior: smooth;
+}
+
+a {
+	color: var(--text);
+}
+
+.image-tooltip {
+    display: none;
+    position: fixed;
+    width: max-content;
+    max-width: 40vw;
+	font-family: "Itim", cursive;
+}
+
+.image-container img:hover + .image-tooltip, .image-tooltip:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    background-color: var(--text);
+    color: var(--background-color);
+    border-radius: 15px;
+}
+
+.image-container img:hover, .image-tooltip:hover {
+    cursor: zoom-in;
+}
+
+.btn {
+    display: flex;
+    padding: 15px;
+    border-radius: 15px;
+    border: 5px solid var(--accent-blue);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Itim", cursive;
+    font-size: 120%;
+    font-weight: bold;
+    transition-duration: .2s;
+}
+
+.btn:hover {
+    background-color: var(--accent-blue);
+    color: var(--background-color)
+}

@@ -1,0 +1,55 @@
+---
+  debug: on
+  snarky_quotes:
+    - "Hello worl- actually nevermind."
+    - "CompileError: no platforms are supported."
+  bind:
+    host: "0.0.0.0"
+    port: 8082
+  hero_image:
+    filename: "pisa.jpg"
+    alt: "The Leaning Tower of Pisa, photo © 2023 by James Adair"
+  fonts:
+      - Roboto
+      - Itim
+      - Covered By Your Grace
+  nav:
+    "About": "/#about"
+    "My Projects": "https://jvadair.com/projects"
+    "Blog": "https://jvadair.com/blog"
+    "Git": "https://github.com/jvadair"
+    "Fun Stuff": "/#:)"
+    "Go to...": "/#hosted"
+  sections:
+    "about":
+      title: "About"
+      image:
+        src: "mama.jpg"
+        alt: "My cat Mama rolling around on the ground, photo © jvadair 2023"
+      description: "Hi! I'm James Adair. I make lots of neat stuff, but I focus a lot of time and energy on making and hosting web services. I also enjoy a good book, camping and petting my two <span style=\"text-decoration: line-through;\">Grand Overlords</span> adorable cats."
+      action: no
+    "hashcards":
+      title: "Featured Project: HashCards"
+      image:
+        src: "hashcards.png"
+        alt: "The HashCards banner, © jvadair 2023"
+      description: "HashCards' mission is to empower students with the ability to study free of distractions and paywalls."
+      action:
+        text: "Visit hashcards.net"
+        url: "https://hashcards.net"
+    "pyntree":
+      title: "Featured Project: pyntree"
+      image:
+        src: "pyntree.png"
+        alt: "The pyntree logo, © jvadair 2023"
+      description: "pyntree is a python package which allows you to easily and syntactically save your data. Not only that, it also lets you save in multiple formats, and even serialize and compress data by merely changing a few characters."
+      action:
+        text: "View on GitHub"
+        url: "https://github.com/jvadair/pyntree"
+    "under_construction":
+      title: "Under construction"
+      image:
+        src: "under_construction.png"
+        alt: "An 'under construction' image I borrowed from Wikipedia"
+      description: "My website is still undergoing renovations, so please don't freak out if you spot a couple bugs! Shoot me an email at <a href=mailto:dev@jvadair.com>dev@jvadair.com</a> if you spot them though."
+      action: off
